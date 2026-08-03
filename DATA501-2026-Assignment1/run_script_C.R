@@ -1,7 +1,7 @@
 # run the main program 
 library(ggplot2)
-source("fit_nonlinear_B.R")
-source("predict_model_B.R")
+source("fit_nonlinear_C.R")
+source("predict_model_C.R")
 source("plot_model.R")
 source("pipeline.R")
 
@@ -13,7 +13,7 @@ x <- my_data$x
 y <- my_data$y
 
 # set initial parameters
-start_par <-  data.frame(b=c(0.0001), c=c(0.1),A=c(0.1),B= c(0.1), freq=c(4.5), model_type=c("B") )  
+start_par <-  data.frame(a=c(0.0001), c=c(0.1),A=c(0.1),B= c(0.1), freq=c(4.5), model_type=c("C") )  
 
 
 
@@ -24,5 +24,5 @@ temp <- run_analysis(x,y,start_par)
 print(temp$plot)
 
 #print out
-print(paste("model B. BIC=",round(temp$bic,3) ," AIC=",round(temp$aic,3)))
+print(paste("model C. BIC=",round(temp$bic,3) ," AIC=",round(temp$aic,3)))
 
