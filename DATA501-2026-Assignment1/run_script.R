@@ -1,6 +1,6 @@
 # run the main program 
 library(ggplot2)
-source("fit_nonlinear_C.R")
+source("fit_nonlinear.R")
 source("predict_model_C.R")
 source("plot_model.R")
 source("pipeline.R")
