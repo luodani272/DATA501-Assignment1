@@ -13,8 +13,7 @@ x <- my_data$x
 y <- my_data$y
 
 # set initial parameters
-start_par <-  data.frame(c=c(0.1),A=c(0.1),B= c(0.1), freq=c(4.5), model_type=c("D") )  
-
+start_par <-  data.frame(a = c(0.001), b=c(0.0001), c=c(0.1),A=c(0.1),B= c(0.1), freq=c(4.5), model_type=c("D") )
 
 
 # execute the code

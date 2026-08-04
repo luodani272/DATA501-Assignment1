@@ -9,7 +9,7 @@ fit_nonlinear <- function(x, y, start_par) {
   if (model_type == 'D')
   {
      # initialize
-     init_par <- c(start_par$c, start_par$A, start_par$B, start_par$freq)
+     init_par <- c(start_par$a, start_par$b,start_par$c, start_par$A, start_par$B, start_par$freq)
      
      # number of parameters
      k <- length(init_par)
