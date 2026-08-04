@@ -18,7 +18,7 @@ start_par <-  data.frame(a = c(0.001), b=c(0.0001), c=c(0.1),A=c(0.1),B= c(0.1),
 
 
 # execute the code
-seq <- c("A", "B", "C")
+seq <- c("A", "B")
 for (v in seq)
 {
     start_par[7] <- v
