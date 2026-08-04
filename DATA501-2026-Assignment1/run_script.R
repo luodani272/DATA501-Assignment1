@@ -18,11 +18,14 @@ start_par <-  data.frame(a = c(0.001), b=c(0.0001), c=c(0.1),A=c(0.1),B= c(0.1),
 
 
 # execute the code
-temp <- run_analysis(x,y,start_par)
-
-# visualize the data and the model
-print(temp$plot)
-
-#print out
-print(paste("model A. BIC=",round(temp$bic,3) ," AIC=",round(temp$aic,3)))
-
+seq <- c("A", "B")
+for (v in seq)
+{
+    start_par[7] <- v
+    temp <- run_analysis(x,y,start_par)
+    # visualize the data and the model
+    print(temp$plot)
+    #print out
+    print(paste("model ",v, " BIC=",round(temp$bic,3) ,
+    " AIC=",round(temp$aic,3)))
+}
